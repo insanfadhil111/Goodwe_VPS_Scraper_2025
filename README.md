@@ -48,11 +48,11 @@ Proyek ini adalah script Python berbasis **Selenium** yang digunakan untuk:
    pip install -r requirements.txt
    
 4. Setup Firefox & Geckodriver
-   Download Firefox ESR atau portable.
-   Download geckodriver
-   Letakkan di /usr/local/bin/geckodriver atau sesuaikan path di script.
+   - Download Firefox ESR atau portable.
+   - Download geckodriver
+   - Letakkan di /usr/local/bin/geckodriver atau sesuaikan path di script.
 
-▶️ Menjalankan Scraper
+## ▶️ Menjalankan Scraper
 ```bash
   python3 scrapping.py
 
@@ -69,7 +69,7 @@ Total Generation: 26876.50 kWh
 Total Income: 38828479.55 IDR
 Power (Daya): 7.575kW
 
-📡 Arsitektur Sederhana
+## 📡 Arsitektur Sederhana
 ```bash
 +-------------+        +----------------+        +------------------+
 | Selenium    | -----> | GoodWe SEMS    | -----> | Scraper          |
