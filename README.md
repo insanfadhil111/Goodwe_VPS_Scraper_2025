@@ -58,6 +58,7 @@ Proyek ini adalah script Python berbasis **Selenium** yang digunakan untuk:
 
 ```
 Contoh Output:
+```bash
 Gedung 3 Teknik Elektro berhasil diklik.
 Berhasil pindah ke tab dashboard monitoring.
 Halaman di-refresh untuk mendapatkan data terbaru.
@@ -68,6 +69,7 @@ Income Today: 36550.91 IDR
 Total Generation: 26876.50 kWh
 Total Income: 38828479.55 IDR
 Power (Daya): 7.575kW
+```
 
 ## 📡 Arsitektur Sederhana
 ```bash
