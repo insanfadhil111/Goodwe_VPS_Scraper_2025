@@ -37,3 +37,49 @@ Proyek ini adalah script Python berbasis **Selenium** yang digunakan untuk:
    ```bash
    git clone https://github.com/username/goodwe-scraper.git
    cd goodwe-scraper
+
+2. Buat virtual environment
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   
+3. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   
+4. Setup Firefox & Geckodriver
+   Download Firefox ESR atau portable.
+   Download geckodriver
+   Letakkan di /usr/local/bin/geckodriver atau sesuaikan path di script.
+
+▶️ Menjalankan Scraper
+```bash
+  python3 scrapping.py
+
+```
+Contoh Output:
+Gedung 3 Teknik Elektro berhasil diklik.
+Berhasil pindah ke tab dashboard monitoring.
+Halaman di-refresh untuk mendapatkan data terbaru.
+Data yang dikirim: {'P': 7575.0, 'today_generation': 25300.0, 'total_generation': 26876500.0, 'today_income': 36550, 'total_income': 38828479}
+Data berhasil dikirim ke API: {'message': 'Data added successfully'}
+PV Generation Today: 25.30 kWh
+Income Today: 36550.91 IDR
+Total Generation: 26876.50 kWh
+Total Income: 38828479.55 IDR
+Power (Daya): 7.575kW
+
+📡 Arsitektur Sederhana
+```bash
++-------------+        +----------------+        +------------------+
+| Selenium    | -----> | GoodWe SEMS    | -----> | Scraper          |
+| (Firefox)   |        | Web Dashboard  |        | (Python Script)  |
++-------------+        +----------------+        +------------------+
+                                                    |
+                                                    v
+                                          +------------------+
+                                          | Smart ENMS API   |
+                                          | (iotlab-uns.com) |
+                                          +------------------+
+
+
