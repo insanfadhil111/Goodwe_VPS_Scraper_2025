@@ -30,7 +30,7 @@ README - Scrapping SEMS Portal
    xvfb-run -a python scrapping.py
 
 6. Menjalankan script
-   python scrapping.py
+   python3 scrapping.py
 
 7. Catatan
    - Script ini akan login ke SEMS Portal
