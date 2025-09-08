@@ -70,6 +70,8 @@ Total Generation: 26876.50 kWh
 Total Income: 38828479.55 IDR
 Power (Daya): 7.575kW
 ```
+![Diagram 1](./images/image0.png)
+![Diagram 2](./images/image1.png)
 
 ## 📡 Arsitektur Sederhana
 ```bash
