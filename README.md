@@ -75,13 +75,13 @@ Power (Daya): 7.575kW
 
 ## ⏰ Menjalankan Secara Periodik (Cronjob)
 
-Karena script hanya dijalankan sekali per eksekusi, looping periodik diatur oleh cron.
-Contoh: jalankan setiap 30 menit → edit cron dengan crontab -e dan tambahkan:
+- Karena script hanya dijalankan sekali per eksekusi, looping periodik diatur oleh cron.
+- Contoh: jalankan setiap 30 menit → edit cron dengan crontab -e dan tambahkan:
 ```bash
 */30 * * * * /home/iotlab/Goodwe/venv/bin/python /home/iotlab/Goodwe/scrapping.py >> /home/iotlab/Goodwe/scrap.log 2>&1
 ```
-📌 Script akan jalan otomatis pada menit 00 dan 30 setiap jam.
-📌 Log hasil eksekusi akan tersimpan di file scrap.log.
+- 📌 Script akan jalan otomatis pada menit 00 dan 30 setiap jam.
+- 📌 Log hasil eksekusi akan tersimpan di file scrap.log.
 
 ## 📡 Arsitektur Sederhana
 ```bash
